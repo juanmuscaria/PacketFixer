@@ -1,19 +1,20 @@
 # Project exclude paths
-/.gradle/
-/build/
-/build/classes/java/main/
-/run/
-/.idea/
-/artifacts/
+.gradle/
+build/
+build/classes/java/main/
+run/
+.idea/
+artifacts/
 
-/fabric/build/
-/forge/build/
-/common/build/
-/neoforge/build/
-/fabric/.gradle/
-/forge/.gradle/
-/common/.gradle/
-/neoforge/.gradle
-/fabric/run/
-/forge/run/
-/neoforge/run/
+fabric/build/
+forge/build/
+common/build/
+neoforge/build/
+fabric/.gradle/
+forge/.gradle/
+common/.gradle/
+neoforge/.gradle
+fabric/run/
+forge/run/
+neoforge/run/
+buildSrc
