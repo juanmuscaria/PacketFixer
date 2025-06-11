@@ -10,7 +10,6 @@ plugins {
 
 val modVersion: String by extra
 val minecraftVersion: String by extra
-val minecraftVersionRange: String by extra
 val forgeVersion: String by extra
 
 architectury {
@@ -39,7 +38,7 @@ dependencies {
 }
 
 tasks.withType<ProcessResources> {
-    val replaceProperties = mapOf("minecraftVersionRange" to minecraftVersionRange, "modVersion" to modVersion)
+    val replaceProperties = mapOf("minecraftVersion" to minecraftVersion, "modVersion" to modVersion)
     inputs.properties(replaceProperties)
 
     filesMatching("META-INF/mods.toml") {

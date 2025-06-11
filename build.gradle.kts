@@ -8,7 +8,6 @@ plugins {
 
 val modVersion: String by extra
 val minecraftVersion: String by extra
-val minecraftVersionRange: String by extra
 
 architectury {
     minecraft = minecraftVersion
@@ -37,8 +36,7 @@ allprojects {
     apply(plugin = "java")
     apply(plugin = "architectury-plugin")
 
-    val versionArray = minecraftVersionRange.split(",")
-    version = "$modVersion-${versionArray[0]}-to-${versionArray[1]}"
+    version = "$modVersion-${minecraftVersion}"
     group = "dev.tonimatas.packetfixer"
 
     repositories {
